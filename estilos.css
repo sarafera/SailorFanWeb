@@ -28,7 +28,7 @@
                         .header {
                             width: 100%;
                             height: 100vh;
-                            background-image: url(/Sailor/img/Fondosailor.jpg), linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(0, 0, 0, 0.767));
+                            background-image: url(img/Fondosailor.jpg), linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(0, 0, 0, 0.767));
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
@@ -61,7 +61,7 @@
                             /* 02 */
                             background-image: linear-gradient(to top, #0e0c13 0%, #fbc2eb 100%);
                             /* 028 */
-                            background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
                             display: flex;
                             flex-direction: column;
                             justify-content: space-evenly;
@@ -257,7 +257,7 @@
                             width: 30%;
                             text-align: center;
                             margin-bottom: 20px;
-                            background-image: linear-gradient(135deg, #25222576 0%, #4d00f3c9 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #25222576 0%, #4d00f3c9 100%), url(img/Fondosailor.jpg);
                             border-radius: 3px;
                             border: 2px;
                             margin-top: 50px;
@@ -350,7 +350,7 @@
                         }
                         
                         .barrabajo {
-                            background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
                             color: #ffe925;
                             text-shadow: 1px 1px rgb(250, 115, 239);
                             font-size: 30px;
@@ -429,7 +429,7 @@
                         }
                         
                         .btnusagi {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #6a10face 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #mercurio {
@@ -438,7 +438,7 @@
                         }
                         
                         .btnmarte {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #da114dce 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #da114dce 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #marte {
@@ -447,7 +447,7 @@
                         }
                         
                         .btnvenus {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #dabc11ce 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #dabc11ce 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #venus {
@@ -456,7 +456,7 @@
                         }
                         
                         .btnjupiter {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #0fb409ce 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #0fb409ce 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #jupiter {
@@ -465,7 +465,7 @@
                         }
                         
                         .btnmercurio {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #027aebce 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #027aebce 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #chibiusa {
@@ -474,7 +474,7 @@
                         }
                         
                         .btnchibiusa {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #eb02b9ce 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #eb02b9ce 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #lunaartemis {
@@ -483,7 +483,7 @@
                         }
                         
                         .btnla {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #e9e0e7ce 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #e9e0e7ce 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #antifaz {
@@ -492,7 +492,7 @@
                         }
                         
                         .btnantifaz {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #690000ce 100%), url(/Sailor/img/Fondosailor.jpg);
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #690000ce 100%), url(img/Fondosailor.jpg);
                         }
                         
                         #guerros {
