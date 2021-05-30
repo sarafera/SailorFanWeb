@@ -83,6 +83,11 @@
                             font-size: 50px;
                         }
                         
+                        .menu-navegacion a:hover {
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+                        
                         .titulo {
                             font-size: 60px;
                             margin-bottom: 15px;
@@ -264,6 +269,10 @@
                             padding: 10px;
                         }
                         
+                        .cont-expert h3 {
+                            font-size: 40px;
+                        }
+                        
                         .cont-expert img {
                             display: block;
                             margin: auto;
@@ -338,14 +347,27 @@
                             justify-content: center;
                         }
                         
+                        .links p {
+                            color: #ffe925;
+                            font-size: 40px;
+                            text-align: center;
+                            font-weight: 300;
+                            margin-bottom: 30px;
+                            text-shadow: 1px 1px rgb(250, 115, 239);
+                        }
+                        
+                        .links a {
+                            text-decoration: none;
+                        }
+                        
                         .iconosocial {
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             position: relative;
                             margin-left: 20px;
-                            height: 40px;
-                            width: 40px;
+                            height: 120px;
+                            width: 60px;
                             margin-bottom: -20px;
                         }
                         
@@ -500,6 +522,10 @@
                             background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(6, 1, 15, 0.911));
                         }
                         
+                        .btnguerr {
+                            background-image: linear-gradient(135deg, #0c051a9f 0%, #1b1bebce 100%), url(img/Fondosailor.jpg);
+                        }
+                        
                         .containerpersonajes {
                             width: 95%;
                             max-width: 1200px;
@@ -641,6 +667,14 @@
                             }
                         }
                         
+                        @media screen and (max-width: 700px) {
+                            .cabeceraimagen {
+                                width: auto;
+                                height: 150px;
+                                text-align: center;
+                            }
+                        }
+                        
                         @media screen and (max-width: 600px) {
                             .cabeceraimagen {
                                 width: auto;
@@ -686,10 +720,46 @@
                                 height: 100px;
                                 text-align: center;
                             }
+                            @media screen and (max-width: 610px) {
+                                .cabeceraimagen {
+                                    width: auto;
+                                    height: 100px;
+                                    text-align: center;
+                                }
+                            }
+                            @media screen and (max-width: 642px) {
+                                .cabeceraimagen {
+                                    width: auto;
+                                    height: 100px;
+                                    text-align: center;
+                                }
+                            }
+                            @media screen and (max-width: 626px) {
+                                .cabeceraimagen {
+                                    width: auto;
+                                    height: 90px;
+                                    text-align: center;
+                                }
+                            }
+                            @media screen and (max-width: 586px) {
+                                .cabeceraimagen {
+                                    width: auto;
+                                    height: 100px;
+                                    text-align: center;
+                                }
+                            }
                             @media screen and (max-width: 450px) {
                                 .cabeceraimagen {
                                     width: auto;
                                     height: 100px;
+                                    text-align: center;
+                                    margin-right: 60px;
+                                }
+                            }
+                            @media screen and (max-width: 340px) {
+                                .cabeceraimagen {
+                                    width: auto;
+                                    height: 60px;
                                     text-align: center;
                                 }
                             }
@@ -792,4 +862,9 @@
                             .personajes h2 {
                                 font-size: 15px;
                             }
+                        }
+                        
+                        #estilocronologia {
+                            font-family: 'Times New Roman', Times, serif;
+                            padding: 5px 5px;
                         }
