@@ -1,15 +1,17 @@
+/* Aqui lo que haremos será crear un efecto visual para haver una transición suave cuando naveguemos por nuestra página , para ello recogerá
+el ide de nuestra sección o id a donde quieras ir */
 let ubicacionPrincipal = window.pageYOffset; //0
 
-  AOS.init();
+AOS.init();
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function() {
     let desplazamientoActual = window.pageYOffset; //180
-    if(ubicacionPrincipal >= desplazamientoActual){ // 200 > 180
+    if (ubicacionPrincipal >= desplazamientoActual) { // 200 > 180
         document.getElementsByTagName("nav")[0].style.top = "0px"
-    }else{
+    } else {
         document.getElementsByTagName("nav")[0].style.top = "-100px"
     }
-    ubicacionPrincipal= desplazamientoActual; //200
+    ubicacionPrincipal = desplazamientoActual; //200
 
 })
 
@@ -18,13 +20,13 @@ window.addEventListener("scroll", function(){
 let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
 let semaforo = true;
 
-document.querySelectorAll(".hamburguer")[0].addEventListener("click", function(){
-    if(semaforo){
-        document.querySelectorAll(".hamburguer")[0].style.color ="#fff";
-        semaforo= false;
-    }else{
-        document.querySelectorAll(".hamburguer")[0].style.color ="#000";
-        semaforo= true;
+document.querySelectorAll(".hamburguer")[0].addEventListener("click", function() {
+    if (semaforo) {
+        document.querySelectorAll(".hamburguer")[0].style.color = "#fff";
+        semaforo = false;
+    } else {
+        document.querySelectorAll(".hamburguer")[0].style.color = "#000";
+        semaforo = true;
     }
 
     enlacesHeader.classList.toggle("menudos")

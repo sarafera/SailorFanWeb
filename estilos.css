@@ -782,8 +782,6 @@ body {
     }
 }
 
-
-}
 @media screen and (max-width: 340px) {
     .cabeceraimagen {
         width: auto;
@@ -793,15 +791,16 @@ body {
     }
 }
 
-}
 
 /**Responsive personajes**/
+
 @media screen and (max-width:1000px) {
     .personajesimagen {
         height: 400px;
         width: 100%;
     }
 }
+
 @media screen and (max-width:999px) {
     #usagi img {
         height: 340px;
@@ -847,6 +846,7 @@ body {
         font-size: 35px;
     }
 }
+
 @media screen and (max-width:700px) {
     .personajesimagen {
         height: 150px;
@@ -858,6 +858,7 @@ body {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width:450px) {
     .containerpersonajes {
         width: 60%;
@@ -875,6 +876,7 @@ body {
         height: 160px;
     }
 }
+
 @media screen and (max-width:340px) {
     .personajesimagen {
         height: 160px;
@@ -889,9 +891,8 @@ body {
         font-size: 15px;
     }
 }
+
 #estilocronologia {
-    font-family: 'Times New Roman',
-    Times,
-    serif;
+    font-family: 'Times New Roman', Times, serif;
     padding: 5px 5px;
 }
