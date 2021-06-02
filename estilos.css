@@ -1,870 +1,897 @@
-                        * {
-                            margin: 0;
-                            padding: 0;
-                            box-sizing: border-box;
-                        }
-                        
-                        @font-face {
-                            font-family: "sailor";
-                            src: url(font/Shardee.ttf);
-                        }
-                        
-                         :root {
-                            scroll-behavior: smooth;
-                        }
-                        
-                        body {
-                            font-family: sailor, sans-serif;
-                        }
-                        
-                        .contenedor {
-                            width: 90%;
-                            max-width: 1200px;
-                            overflow: hidden;
-                            margin: auto;
-                            padding: 60px 0;
-                        }
-                        
-                        .header {
-                            width: 100%;
-                            height: 100vh;
-                            background-image: url(img/Fondosailor.jpg), linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(0, 0, 0, 0.767));
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: cover;
-                            background-attachment: fixed;
-                            position: relative;
-                            overflow: hidden;
-                        }
-                        
-                        .hamburguer {
-                            z-index: 10;
-                            position: fixed;
-                            top: 20px;
-                            right: 30px;
-                            background: #fff;
-                            width: 40px;
-                            height: 40px;
-                            cursor: pointer;
-                            border-radius: 10px;
-                            box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-                            padding: 5px;
-                        }
-                        
-                        .menu-navegacion {
-                            z-index: 9;
-                            position: fixed;
-                            top: 0;
-                            width: 20vw;
-                            height: 100%;
-                            /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
-                            /* 02 */
-                            background-image: linear-gradient(to top, #0e0c13 0%, #fbc2eb 100%);
-                            /* 028 */
-                            background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            right: 0;
-                            transform: translateX(110%);
-                            transition: transform 0.3s ease-in-out;
-                            box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-                        }
-                        
-                        .spread {
-                            transform: translateX(0);
-                        }
-                        
-                        .menu-navegacion a {
-                            color: #ffe925;
-                            text-decoration: none;
-                            text-shadow: 1px 1px rgb(250, 115, 239);
-                            font-size: 50px;
-                        }
-                        
-                        .menu-navegacion a:hover {
-                            color: #ffffff;
-                            text-decoration: none;
-                        }
-                        
-                        .titulo {
-                            font-size: 60px;
-                            margin-bottom: 15px;
-                        }
-                        
-                        .copy {
-                            font-weight: 300;
-                            font-size: 25px;
-                        }
-                        /* Services */
-                        
-                        .subtitulo {
-                            color: #ffe925;
-                            font-size: 100px;
-                            text-align: center;
-                            font-weight: 300;
-                            margin-bottom: 30px;
-                            text-shadow: 1px 1px rgb(250, 115, 239)
-                        }
-                        
-                        .contenedor-servicio {
-                            display: flex;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            flex-wrap: wrap;
-                        }
-                        
-                        .contenedor-servicio img {
-                            width: 50%;
-                        }
-                        
-                        .checklist-servicio {
-                            width: 45%;
-                        }
-                        
-                        #opening {
-                            align-items: center;
-                            align-content: center;
-                            text-align: center;
-                            font-weight: 300;
-                            margin-bottom: 30px;
-                        }
-                        
-                        #opening img {
-                            align-items: center;
-                            align-content: center;
-                        }
-                        
-                        #opening h3 {
-                            align-items: center;
-                            align-content: center;
-                            font-size: 70PX;
-                            color: #ffe925;
-                            text-decoration: none;
-                            text-shadow: 1px 1px rgb(250, 115, 239);
-                        }
-                        
-                        .service {
-                            margin-bottom: 20px;
-                            font-size: 25px;
-                            color: #110e11;
-                            font-family: sailor;
-                        }
-                        
-                        .service a {
-                            text-decoration: none;
-                            text-align: center;
-                            color: #fff8fc;
-                            font-family: sailor;
-                            border: 1px;
-                            border-radius: 2px;
-                            text-shadow: 1px 1px rgb(233, 105, 233);
-                            font-size: 30px;
-                            padding: 3px 8px;
-                        }
-                        
-                        .n-service {
-                            margin-bottom: 7px;
-                            color: #f8ea27;
-                            font-size: 30px;
-                            text-shadow: 1px 1px rgb(226, 93, 220);
-                            font-family: sailor;
-                        }
-                        
-                        .number {
-                            display: inline-block;
-                            /* 02 */
-                            background-image: linear-gradient(to top, #eb68aa 0%, #fbc2eb 100%);
-                            line-height: 30px;
-                            text-align: center;
-                            border-radius: 50%;
-                            margin-right: 5px;
-                            width: 30px;
-                            height: 30px;
-                            color: #fff;
-                            font-weight: 700;
-                        }
-                        
-                        .gallery {
-                            background-image: linear-gradient(to top, rgba(22, 27, 70, 0.295), rgb(81, 1, 240));
-                        }
-                        
-                        #olagaleria {
-                            position: relative;
-                        }
-                        
-                        .contenedor-galeria {
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-evenly;
-                            margin-top: 30px;
-                        }
-                        
-                        .img-galeria {
-                            width: 30%;
-                            display: block;
-                            margin-bottom: 15px;
-                            box-shadow: 0 0 6px rgba(0, 0, 0, .6);
-                            cursor: pointer;
-                        }
-                        
-                        .imagen-light {
-                            position: fixed;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 100%;
-                            height: 100%;
-                            top: 0;
-                            left: 0;
-                            background: rgba(0, 0, 0, 0.534);
-                            transform: translate(100%);
-                            transition: transform .2s ease-in-out;
-                        }
-                        
-                        .agregar-imagen {
-                            width: 60%;
-                            transform: scale(0);
-                            border-radius: 10px;
-                            transition: transform .3s .2s;
-                        }
-                        
-                        .showImage {
-                            transform: scale(1);
-                        }
-                        
-                        .show {
-                            transform: translate(0);
-                        }
-                        
-                        .close {
-                            position: absolute;
-                            top: 15px;
-                            right: 15px;
-                            width: 40px;
-                            cursor: pointer;
-                        }
-                        
-                        .experts {
-                            width: 100%;
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            text-shadow: 0.5px 0.5px rgb(240, 115, 229);
-                            color: #e1f05f;
-                            margin-top: 30px;
-                            font-size: 20px;
-                        }
-                        
-                        .cont-expert {
-                            width: 30%;
-                            text-align: center;
-                            margin-bottom: 20px;
-                            background-image: linear-gradient(135deg, #25222576 0%, #4d00f3c9 100%), url(img/Fondosailor.jpg);
-                            border-radius: 3px;
-                            border: 2px;
-                            margin-top: 50px;
-                            padding: 10px;
-                        }
-                        
-                        .cont-expert h3 {
-                            font-size: 40px;
-                        }
-                        
-                        .cont-expert img {
-                            display: block;
-                            margin: auto;
-                            width: 80%;
-                            align-content: inherit;
-                        }
-                        
-                        .n-expert {
-                            width: 100%;
-                            display: inline-block;
-                            margin-top: 20px;
-                            font-weight: 400;
-                        }
-                        
-                        .social-media-icon:hover {
-                            background: #fff;
-                            color: #764ba2;
-                        }
-                        
-                        .ola {
-                            position: absolute;
-                            bottom: 0;
-                            width: 100%;
-                        }
-                        /**Cabecera**/
-                        
-                        .containercabecera {
-                            width: 95%;
-                            max-width: 1200px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-around;
-                            margin: auto;
-                            padding: 0;
-                            height: 100%;
-                            color: #fff;
-                            margin-bottom: 200%;
-                            margin-top: -80px;
-                        }
-                        
-                        .cabeceraimagen {
-                            display: block;
-                            height: 250px;
-                            object-fit: cover;
-                            animation: arriba 1s ease-in;
-                            align-items: center;
-                            margin-left: -20%;
-                        }
-                        
-                        .cabecera {
-                            width: 50%;
-                            color: azure;
-                        }
-                        /**footer**/
-                        
-                        .social {
-                            margin: 50px;
-                        }
-                        
-                        .social p {
-                            color: #ffe925;
-                            font-size: 100px;
-                            text-align: center;
-                            font-weight: 300;
-                            margin-bottom: 30px;
-                            text-shadow: 1px 1px rgb(250, 115, 239);
-                        }
-                        
-                        .links {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                        
-                        .links p {
-                            color: #ffe925;
-                            font-size: 40px;
-                            text-align: center;
-                            font-weight: 300;
-                            margin-bottom: 30px;
-                            text-shadow: 1px 1px rgb(250, 115, 239);
-                        }
-                        
-                        .links a {
-                            text-decoration: none;
-                        }
-                        
-                        .iconosocial {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            position: relative;
-                            margin-left: 20px;
-                            height: 120px;
-                            width: 60px;
-                            margin-bottom: -20px;
-                        }
-                        
-                        .barrabajo {
-                            background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
-                            color: #ffe925;
-                            text-shadow: 1px 1px rgb(250, 115, 239);
-                            font-size: 30px;
-                            padding: 35px 0;
-                            font-family: sailor;
-                            width: 100%;
-                            height: 100%;
-                            margin: auto;
-                            padding: 35px 0;
-                            text-decoration: none;
-                        }
-                        
-                        .barrabajo li {
-                            text-decoration: none;
-                            line-height: 2.8;
-                        }
-                        
-                        .barrabajo ul {
-                            text-decoration: none;
-                            list-style: none;
-                        }
-                        
-                        .barracontainer {
-                            /*centramos el contenido*/
-                            display: grid;
-                            /*con esto hacemos que las columnas se dividan en 4*/
-                            grid-template-columns: repeat(3, 1fr);
-                            /*añadimos espacios entra las columnas con gap*/
-                            gap: 20px;
-                            align-items: flex-start;
-                            justify-content: center;
-                            text-decoration: none;
-                        }
-                        
-                        .barracontainer ul {
-                            margin: 0 auto;
-                            text-decoration: none;
-                            color: #ffe925;
-                        }
-                        
-                        .barracontainer il {
-                            text-decoration: none;
-                        }
-                        
-                        .barracontainer ul li {
-                            line-height: 2, 8;
-                            text-decoration: none;
-                            color: #ffe925;
-                        }
-                        
-                        .barracontainer ul li a {
-                            text-decoration: none;
-                            color: #ffe925;
-                        }
-                        
-                        @media (max-width: 700px) {
-                            .barracontainer {
-                                grid-template-columns: repeat(2, 1fr);
-                            }
-                        }
-                        
-                        @media (max-width: 500px) {
-                            .links .barracontainer {
-                                grid-template-columns: 1fr;
-                            }
-                            .links .barracontainer ul {
-                                text-align: center;
-                            }
-                        }
-                        /*Fin Diseño de la parte social*/
-                        /*Diseño personajes*/
-                        
-                        #usagi {
-                            background-color: #f1e8ee;
-                            background-image: linear-gradient(to top, rgb(231, 168, 228), rgba(240, 107, 240, 0.664));
-                        }
-                        
-                        .btnusagi {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #mercurio {
-                            background-color: #f1e8ee;
-                            background-image: linear-gradient(to top, rgba(170, 19, 19, 0.87), rgba(231, 168, 228));
-                        }
-                        
-                        .btnmarte {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #da114dce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #marte {
-                            background-color: #f1e8ee;
-                            background-image: linear-gradient(to top, rgba(255, 126, 40, 0.959), rgba(170, 19, 19, 0.87));
-                        }
-                        
-                        .btnvenus {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #dabc11ce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #venus {
-                            background-color: #f1e8ee;
-                            background-image: linear-gradient(to top, rgba(12, 151, 7, 0.959), rgba(255, 126, 40, 0.959));
-                        }
-                        
-                        .btnjupiter {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #0fb409ce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #jupiter {
-                            background-color: #e4e9f0;
-                            background-image: linear-gradient(to top, #6396e2, rgba(12, 151, 7, 0.959));
-                        }
-                        
-                        .btnmercurio {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #027aebce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #chibiusa {
-                            background-color: #f1e8ee;
-                            background-image: linear-gradient(to top, rgba(240, 116, 203, 0.925), #6396e2);
-                        }
-                        
-                        .btnchibiusa {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #eb02b9ce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #lunaartemis {
-                            background-color: #f3e7f1;
-                            background-image: linear-gradient(to top, rgba(87, 35, 211, 0.747), rgba(240, 116, 203, 0.925));
-                        }
-                        
-                        .btnla {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #e9e0e7ce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #antifaz {
-                            background-color: #f3ecf2;
-                            background-image: linear-gradient(to top, rgba(6, 1, 15, 0.911), rgba(87, 35, 211, 0.747));
-                        }
-                        
-                        .btnantifaz {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #690000ce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        #guerros {
-                            background-color: #f3ecf2;
-                            background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(6, 1, 15, 0.911));
-                        }
-                        
-                        .btnguerr {
-                            background-image: linear-gradient(135deg, #0c051a9f 0%, #1b1bebce 100%), url(img/Fondosailor.jpg);
-                        }
-                        
-                        .containerpersonajes {
-                            width: 95%;
-                            max-width: 1200px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-around;
-                            margin: auto;
-                            background-color: #e692c5;
-                            color: #ffe925;
-                            text-shadow: 1px 1px rgb(250, 115, 239);
-                        }
-                        
-                        .personajesimagen {
-                            display: block;
-                            height: 450px;
-                            white-space: 300px;
-                            object-fit: cover;
-                            animation: arriba 1s ease-in;
-                        }
-                        
-                        .personajes {
-                            width: 50%;
-                            color: #ffffff;
-                        }
-                        
-                        .personajes h1 {
-                            font-size: 50px;
-                            animation: moverDerecha 1s ease-in;
-                            margin: 5px;
-                        }
-                        
-                        .personajes h2 {
-                            font-size: 20px;
-                            animation: moverIzquierda 1s ease-in-out;
-                            font-family: 'Times New Roman', Times, serif;
-                        }
-                        
-                        .personajes a {
-                            display: inline-block;
-                            color: azure;
-                            text-decoration: none;
-                            margin-top: 30px;
-                            border: 1px solid #ffff;
-                            width: 250px;
-                            border-radius: 3px;
-                            text-align: center;
-                            padding: 10px 0;
-                            animation: arriba 1s ease-in;
-                            font-size: 20px;
-                        }
-                        
-                        @keyframes moverIzquierda {
-                            0% {
-                                opacity: 0;
-                                transform: translateX(-100px);
-                            }
-                            100% {
-                                opacity: 1;
-                                transform: translate(0);
-                            }
-                        }
-                        
-                        @keyframes moverDerecha {
-                            0% {
-                                opacity: 0;
-                                transform: translateX(100px);
-                            }
-                            100% {
-                                opacity: 1;
-                                transform: translate(0);
-                            }
-                        }
-                        
-                        @keyframes arriba {
-                            0% {
-                                opacity: 0;
-                                transform: translateY(100px);
-                            }
-                            100% {
-                                opacity: 1;
-                                transform: translate(0);
-                            }
-                        }
-                        /*Fin Personajes*/
-                        
-                        @media screen and (max-width: 1000px) {
-                            .cabeceraimagen {
-                                width: auto;
-                                height: 200px;
-                                text-align: center;
-                            }
-                        }
-                        
-                        @media screen and (max-width: 800px) {
-                            .menu-navegacion {
-                                width: 50vw;
-                            }
-                            .titulo {
-                                font-size: 40px;
-                            }
-                            .contenedor-servicio img {
-                                width: 80%;
-                                margin-bottom: 40px;
-                            }
-                            .checklist-servicio {
-                                width: 80%;
-                            }
-                            .service {
-                                margin-bottom: 30px;
-                            }
-                            .img-galeria {
-                                width: 45%;
-                            }
-                            .agregarImagen {
-                                width: 80%;
-                            }
-                            .cont-expert {
-                                width: 80%;
-                            }
-                            .footer-content {
-                                justify-content: center;
-                            }
-                            .social-media {
-                                width: 80%;
-                                justify-content: space-evenly;
-                            }
-                            .social-media-icon {
-                                margin-left: 0;
-                            }
-                            .contact-us {
-                                text-align: center;
-                                width: 80%;
-                                margin-bottom: 40px;
-                            }
-                            .cabeceraimagen {
-                                width: auto;
-                                height: 180px;
-                                text-align: center;
-                            }
-                        }
-                        
-                        @media screen and (max-width: 700px) {
-                            .cabeceraimagen {
-                                width: auto;
-                                height: 150px;
-                                text-align: center;
-                            }
-                        }
-                        
-                        @media screen and (max-width: 600px) {
-                            .cabeceraimagen {
-                                width: auto;
-                                height: 150px;
-                                text-align: center;
-                            }
-                        }
-                        
-                        @media screen and (max-width: 500px) {
-                            .menu-navegacion {
-                                width: 65vw;
-                            }
-                            .hamburguer {
-                                top: 10px;
-                                right: 10px;
-                            }
-                            .titulo {
-                                font-size: 30px;
-                            }
-                            .subtitulo {
-                                font-size: 30px;
-                            }
-                            .img-galeria {
-                                width: 95%;
-                            }
-                            .agregar-imagen {
-                                width: 90%;
-                            }
-                            .social-media {
-                                width: 100%;
-                                justify-content: space-evenly;
-                            }
-                            .social-media-icon {
-                                margin-left: 0;
-                            }
-                            .contact-us {
-                                text-align: center;
-                                width: 95%;
-                                margin-bottom: 40px;
-                            }
-                            .cabeceraimagen {
-                                width: auto;
-                                height: 100px;
-                                text-align: center;
-                            }
-                            @media screen and (max-width: 610px) {
-                                .cabeceraimagen {
-                                    width: auto;
-                                    height: 100px;
-                                    text-align: center;
-                                }
-                            }
-                            @media screen and (max-width: 642px) {
-                                .cabeceraimagen {
-                                    width: auto;
-                                    height: 100px;
-                                    text-align: center;
-                                }
-                            }
-                            @media screen and (max-width: 626px) {
-                                .cabeceraimagen {
-                                    width: auto;
-                                    height: 90px;
-                                    text-align: center;
-                                }
-                            }
-                            @media screen and (max-width: 586px) {
-                                .cabeceraimagen {
-                                    width: auto;
-                                    height: 100px;
-                                    text-align: center;
-                                }
-                            }
-                            @media screen and (max-width: 450px) {
-                                .cabeceraimagen {
-                                    width: auto;
-                                    height: 100px;
-                                    text-align: center;
-                                    margin-right: 60px;
-                                }
-                            }
-                            @media screen and (max-width: 340px) {
-                                .cabeceraimagen {
-                                    width: auto;
-                                    height: 60px;
-                                    text-align: center;
-                                }
-                            }
-                        }
-                        /**Responsive personajes**/
-                        
-                        @media screen and (max-width:1000px) {
-                            .personajesimagen {
-                                height: 400px;
-                                width: 100%;
-                            }
-                        }
-                        
-                        @media screen and (max-width:999px) {
-                            #usagi img {
-                                height: 340px;
-                                width: 300px;
-                                padding: 10px;
-                            }
-                            #mercurio img {
-                                height: 280px;
-                                width: 130px;
-                            }
-                            #marte img {
-                                height: 290px;
-                                width: 170px;
-                            }
-                            #venus img {
-                                height: 340px;
-                                width: 120px;
-                            }
-                            #jupiter img {
-                                height: 340px;
-                                width: 120px;
-                            }
-                            #chibiusa img {
-                                height: 340px;
-                                width: 210px;
-                            }
-                            #lunaartemis img {
-                                height: 240px;
-                                width: 250px;
-                            }
-                            #antifaz img {
-                                height: 250px;
-                                width: 180px;
-                            }
-                            #guerros img {
-                                height: 290px;
-                                width: 180px;
-                            }
-                            .personajes h1 {
-                                font-size: 80px;
-                            }
-                            .personajes {
-                                font-size: 35px;
-                            }
-                        }
-                        
-                        @media screen and (max-width:700px) {
-                            .personajesimagen {
-                                height: 150px;
-                            }
-                            .personajes h1 {
-                                font-size: 40px;
-                            }
-                            .personajes h2 {
-                                font-size: 15px;
-                            }
-                        }
-                        
-                        @media screen and (max-width:450px) {
-                            .containerpersonajes {
-                                width: 60%;
-                                flex-wrap: wrap-reverse;
-                                justify-content: center;
-                            }
-                            .personajes {
-                                width: 100%;
-                                text-align: center;
-                            }
-                            .personajes h1 {
-                                font-size: 60px;
-                            }
-                            .personajesimagen {
-                                height: 160px;
-                            }
-                        }
-                        
-                        @media screen and (max-width:340px) {
-                            .personajesimagen {
-                                height: 160px;
-                            }
-                            .personajes h1 {
-                                font-size: 35px;
-                            }
-                            .personajes a {
-                                width: 120px;
-                            }
-                            .personajes h2 {
-                                font-size: 15px;
-                            }
-                        }
-                        
-                        #estilocronologia {
-                            font-family: 'Times New Roman', Times, serif;
-                            padding: 5px 5px;
-                        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "sailor";
+    src: url(font/Shardee.ttf);
+}
+
+ :root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sailor, sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Fondosailor.jpg), linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(0, 0, 0, 0.767));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.hamburguer {
+    z-index: 10;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    padding: 5px;
+}
+
+.menu-navegacion {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    width: 20vw;
+    height: 100%;
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
+    /* 02 */
+    background-image: linear-gradient(to top, #0e0c13 0%, #fbc2eb 100%);
+    /* 028 */
+    background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread {
+    transform: translateX(0);
+}
+
+.menu-navegacion a {
+    color: #ffe925;
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(250, 115, 239);
+    font-size: 50px;
+}
+
+.menu-navegacion a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+
+/* Services */
+
+.subtitulo {
+    color: #ffe925;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px rgb(250, 115, 239)
+}
+
+.contenedor-servicio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img {
+    width: 50%;
+}
+
+.checklist-servicio {
+    width: 45%;
+}
+
+#opening {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#opening img {
+    align-items: center;
+    align-content: center;
+}
+
+#opening h3 {
+    align-items: center;
+    align-content: center;
+    font-size: 70PX;
+    color: #ffe925;
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(250, 115, 239);
+}
+
+.service {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #110e11;
+    font-family: sailor;
+}
+
+.service a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff8fc;
+    font-family: sailor;
+    border: 1px;
+    border-radius: 2px;
+    text-shadow: 1px 1px rgb(233, 105, 233);
+    font-size: 30px;
+    padding: 3px 8px;
+}
+
+.n-service {
+    margin-bottom: 7px;
+    color: #f8ea27;
+    font-size: 30px;
+    text-shadow: 1px 1px rgb(226, 93, 220);
+    font-family: sailor;
+}
+
+.number {
+    display: inline-block;
+    /* 02 */
+    background-image: linear-gradient(to top, #eb68aa 0%, #fbc2eb 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.gallery {
+    background-image: linear-gradient(to top, rgba(22, 27, 70, 0.295), rgb(81, 1, 240));
+}
+
+#olagaleria {
+    position: relative;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.img-galeria {
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.imagen-light {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen {
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.show {
+    transform: translate(0);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.experts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-shadow: 0.5px 0.5px rgb(240, 115, 229);
+    color: #e1f05f;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.cont-expert {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient(135deg, #25222576 0%, #4d00f3c9 100%), url(img/Fondosailor.jpg);
+    border-radius: 3px;
+    border: 2px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.cont-expert h3 {
+    font-size: 40px;
+}
+
+.cont-expert img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    align-content: inherit;
+}
+
+.n-expert {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.social-media-icon:hover {
+    background: #fff;
+    color: #764ba2;
+}
+
+.ola {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/**Cabecera**/
+
+.containercabecera {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    margin-bottom: 200%;
+    margin-top: -80px;
+}
+
+.cabeceraimagen {
+    display: block;
+    height: 250px;
+    object-fit: cover;
+    animation: arriba 1s ease-in;
+    align-items: center;
+    margin-left: -20%;
+}
+
+.cabecera {
+    width: 50%;
+    color: azure;
+}
+
+
+/**footer**/
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    color: #ffe925;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px rgb(250, 115, 239);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links p {
+    color: #ffe925;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px rgb(250, 115, 239);
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.iconosocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 20px;
+    height: 120px;
+    width: 60px;
+    margin-bottom: -20px;
+}
+
+.barrabajo {
+    background-image: linear-gradient(135deg, #0a011b9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
+    color: #ffe925;
+    text-shadow: 1px 1px rgb(250, 115, 239);
+    font-size: 30px;
+    padding: 35px 0;
+    font-family: sailor;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 35px 0;
+    text-decoration: none;
+}
+
+.barrabajo li {
+    text-decoration: none;
+    line-height: 2.8;
+}
+
+.barrabajo ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.barracontainer {
+    /*centramos el contenido*/
+    display: grid;
+    /*con esto hacemos que las columnas se dividan en 4*/
+    grid-template-columns: repeat(3, 1fr);
+    /*añadimos espacios entra las columnas con gap*/
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.barracontainer ul {
+    margin: 0 auto;
+    text-decoration: none;
+    color: #ffe925;
+}
+
+.barracontainer il {
+    text-decoration: none;
+}
+
+.barracontainer ul li {
+    line-height: 2, 8;
+    text-decoration: none;
+    color: #ffe925;
+}
+
+.barracontainer ul li a {
+    text-decoration: none;
+    color: #ffe925;
+}
+
+@media (max-width: 700px) {
+    .barracontainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .links .barracontainer {
+        grid-template-columns: 1fr;
+    }
+    .links .barracontainer ul {
+        text-align: center;
+    }
+}
+
+
+/*Fin Diseño de la parte social*/
+
+
+/*Diseño personajes*/
+
+#usagi {
+    background-color: #f1e8ee;
+    background-image: linear-gradient(to top, rgb(231, 168, 228), rgba(240, 107, 240, 0.664));
+}
+
+.btnusagi {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #6a10face 100%), url(img/Fondosailor.jpg);
+}
+
+#mercurio {
+    background-color: #f1e8ee;
+    background-image: linear-gradient(to top, rgba(170, 19, 19, 0.87), rgba(231, 168, 228));
+}
+
+.btnmarte {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #da114dce 100%), url(img/Fondosailor.jpg);
+}
+
+#marte {
+    background-color: #f1e8ee;
+    background-image: linear-gradient(to top, rgba(255, 126, 40, 0.959), rgba(170, 19, 19, 0.87));
+}
+
+.btnvenus {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #dabc11ce 100%), url(img/Fondosailor.jpg);
+}
+
+#venus {
+    background-color: #f1e8ee;
+    background-image: linear-gradient(to top, rgba(12, 151, 7, 0.959), rgba(255, 126, 40, 0.959));
+}
+
+.btnjupiter {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #0fb409ce 100%), url(img/Fondosailor.jpg);
+}
+
+#jupiter {
+    background-color: #e4e9f0;
+    background-image: linear-gradient(to top, #6396e2, rgba(12, 151, 7, 0.959));
+}
+
+.btnmercurio {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #027aebce 100%), url(img/Fondosailor.jpg);
+}
+
+#chibiusa {
+    background-color: #f1e8ee;
+    background-image: linear-gradient(to top, rgba(240, 116, 203, 0.925), #6396e2);
+}
+
+.btnchibiusa {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #eb02b9ce 100%), url(img/Fondosailor.jpg);
+}
+
+#lunaartemis {
+    background-color: #f3e7f1;
+    background-image: linear-gradient(to top, rgba(87, 35, 211, 0.747), rgba(240, 116, 203, 0.925));
+}
+
+.btnla {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #e9e0e7ce 100%), url(img/Fondosailor.jpg);
+}
+
+#antifaz {
+    background-color: #f3ecf2;
+    background-image: linear-gradient(to top, rgba(6, 1, 15, 0.911), rgba(87, 35, 211, 0.747));
+}
+
+.btnantifaz {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #690000ce 100%), url(img/Fondosailor.jpg);
+}
+
+#guerros {
+    background-color: #f3ecf2;
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(6, 1, 15, 0.911));
+}
+
+.btnguerr {
+    background-image: linear-gradient(135deg, #0c051a9f 0%, #1b1bebce 100%), url(img/Fondosailor.jpg);
+}
+
+.containerpersonajes {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: #e692c5;
+    color: #ffe925;
+    text-shadow: 1px 1px rgb(250, 115, 239);
+}
+
+.personajesimagen {
+    display: block;
+    height: 450px;
+    white-space: 300px;
+    object-fit: cover;
+    animation: arriba 1s ease-in;
+}
+
+.personajes {
+    width: 50%;
+    color: #ffffff;
+}
+
+.personajes h1 {
+    font-size: 50px;
+    animation: moverDerecha 1s ease-in;
+    margin: 5px;
+}
+
+.personajes h2 {
+    font-size: 20px;
+    animation: moverIzquierda 1s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.personajes a {
+    display: inline-block;
+    color: azure;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #ffff;
+    width: 250px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+    font-size: 20px;
+}
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/*Fin Personajes*/
+
+@media screen and (max-width: 1000px) {
+    .cabeceraimagen {
+        width: auto;
+        height: 200px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu-navegacion {
+        width: 50vw;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+    .contenedor-servicio img {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-servicio {
+        width: 80%;
+    }
+    .service {
+        margin-bottom: 30px;
+    }
+    .img-galeria {
+        width: 45%;
+    }
+    .agregarImagen {
+        width: 80%;
+    }
+    .cont-expert {
+        width: 80%;
+    }
+    .footer-content {
+        justify-content: center;
+    }
+    .social-media {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media-icon {
+        margin-left: 0;
+    }
+    .contact-us {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .cabeceraimagen {
+        width: auto;
+        height: 180px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cabeceraimagen {
+        width: auto;
+        height: 150px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cabeceraimagen {
+        width: auto;
+        height: 150px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-navegacion {
+        width: 65vw;
+    }
+    .hamburguer {
+        top: 10px;
+        right: 10px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .subtitulo {
+        font-size: 30px;
+    }
+    .img-galeria {
+        width: 95%;
+    }
+    .agregar-imagen {
+        width: 90%;
+    }
+    .social-media {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .social-media-icon {
+        margin-left: 0;
+    }
+    .contact-us {
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    .cabeceraimagen {
+        width: auto;
+        height: 100px;
+        text-align: center;
+    }
+    @media screen and (max-width: 610px) {
+        .cabeceraimagen {
+            width: auto;
+            height: 100px;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 642px) {
+        .cabeceraimagen {
+            width: auto;
+            height: 100px;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 626px) {
+        .cabeceraimagen {
+            width: auto;
+            height: 100px;
+            text-align: center;
+            margin-left: -100px;
+        }
+    }
+    @media screen and (max-width: 586px) {
+        .cabeceraimagen {
+            width: auto;
+            height: 100px;
+            text-align: center;
+            margin-left: -60px;
+        }
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .cabeceraimagen {
+        width: auto;
+        height: 100px;
+        text-align: center;
+        margin-left: -60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cabeceraimagen {
+        width: auto;
+        height: 80px;
+        text-align: center;
+        margin-left: -60px;
+    }
+}
+
+
+}
+@media screen and (max-width: 340px) {
+    .cabeceraimagen {
+        width: auto;
+        height: 80px;
+        text-align: center;
+        margin-left: -60px;
+    }
+}
+
+}
+
+/**Responsive personajes**/
+@media screen and (max-width:1000px) {
+    .personajesimagen {
+        height: 400px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:999px) {
+    #usagi img {
+        height: 340px;
+        width: 300px;
+        padding: 10px;
+    }
+    #mercurio img {
+        height: 280px;
+        width: 130px;
+    }
+    #marte img {
+        height: 290px;
+        width: 170px;
+    }
+    #venus img {
+        height: 340px;
+        width: 120px;
+    }
+    #jupiter img {
+        height: 340px;
+        width: 120px;
+    }
+    #chibiusa img {
+        height: 340px;
+        width: 210px;
+    }
+    #lunaartemis img {
+        height: 240px;
+        width: 250px;
+    }
+    #antifaz img {
+        height: 250px;
+        width: 180px;
+    }
+    #guerros img {
+        height: 290px;
+        width: 180px;
+    }
+    .personajes h1 {
+        font-size: 80px;
+    }
+    .personajes {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:700px) {
+    .personajesimagen {
+        height: 150px;
+    }
+    .personajes h1 {
+        font-size: 40px;
+    }
+    .personajes h2 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:450px) {
+    .containerpersonajes {
+        width: 60%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .personajes {
+        width: 100%;
+        text-align: center;
+    }
+    .personajes h1 {
+        font-size: 60px;
+    }
+    .personajesimagen {
+        height: 160px;
+    }
+}
+@media screen and (max-width:340px) {
+    .personajesimagen {
+        height: 160px;
+    }
+    .personajes h1 {
+        font-size: 35px;
+    }
+    .personajes a {
+        width: 120px;
+    }
+    .personajes h2 {
+        font-size: 15px;
+    }
+}
+#estilocronologia {
+    font-family: 'Times New Roman',
+    Times,
+    serif;
+    padding: 5px 5px;
+}
